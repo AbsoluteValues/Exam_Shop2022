@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -29,6 +30,21 @@ public class MainActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        RadioButton radio1 = findViewById(R.id.radio1);
+        RadioButton radio2 = findViewById(R.id.radio2);
+        RadioButton radio3 = findViewById(R.id.radio3);
+        RadioButton radio4 = findViewById(R.id.radio4);
+
+        Button btn_minus = findViewById(R.id.btn_minus);
+        EditText edit_count = findViewById(R.id.edit_count);
+        Button btn_plus = findViewById(R.id.btn_plus);
+
+        TextView txt_price = findViewById(R.id.txt_price);
+        TextView txt_delivery = findViewById(R.id.txt_delivery);
+        TextView txt_pay = findViewById(R.id.txt_pay);
+
+        CheckBox chk_agree = findViewById(R.id.chk_agree);
+        Button btn_pay = findViewById(R.id.btn_pay);
+    }
 }
